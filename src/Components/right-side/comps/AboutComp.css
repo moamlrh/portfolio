@@ -1,0 +1,81 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.425);
+  margin-bottom: 10px;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+.about > h2 {
+  font-weight: 900;
+  /* position: sticky;
+  top: 0; */
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+}
+.about > h2::after {
+  content: "";
+  width: 80px;
+  display: block;
+  border-bottom: 3px solid rgba(217, 255, 0, 0.712);
+}
+.about > p {
+  padding: 10px 20px;
+  width: 70%;
+  margin: auto;
+  color: rgb(161, 161, 161);
+  border-radius: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.about > .about-sections {
+  margin: 10px;
+}
+.about-sections > .first-section {
+  display: flex;
+  margin: 30px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+  padding: 40px;
+}
+.first-section > img {
+  width: 40%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.329);
+}
+
+.about-sections > .second-section {
+  display: flex;
+  margin-top: 80px;
+}
+
+.second-section > img {
+  width: 40%;
+  margin-left: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.329);
+}
+
+/* --------------------- */
+.information {
+  margin: 0px 20px;
+  text-align: left;
+}
+.information > h3 {
+  font-size: 25px;
+  border-radius: 20px;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+.information > p {
+  font-size: 20px;
+  font-weight: 100;
+  color: rgb(117, 117, 117);
+}

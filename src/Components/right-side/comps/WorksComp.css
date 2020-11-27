@@ -1,0 +1,68 @@
+.works {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.377);
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.works h2 {
+  padding: 10px;
+  position: relative;
+}
+.works > h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  width: 70px;
+  display: block;
+  border-bottom: 3px solid rgba(217, 255, 0, 0.712);
+}
+
+.works p {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+.works-sections {
+  margin: 20px 10px;
+}
+
+.works-tabs{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.works-tabs > * {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.works-tabs > *:hover {
+  background-color: rgba(0, 255, 136, 0.192);
+  color: aqua;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns:repeat(3,1fr) ;
+  grid-gap: 10px;
+}
+
+.projects > div{
+  border-radius: 20px;
+  overflow: hidden;
+}
+.projects > div > img {
+  width: 250px;
+  cursor: pointer;
+}

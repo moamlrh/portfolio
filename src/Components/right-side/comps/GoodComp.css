@@ -1,0 +1,71 @@
+.good-at{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    padding-bottom: 40px;
+    margin:10px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.527);
+}
+
+.good-at h2 {
+    padding: 10px;
+    margin: 20px 10px;
+    position: relative;
+}
+
+.good-at h2::after{
+    content: "";
+    background-color: greenyellow;
+    position: absolute;
+    border-bottom: 3px solid greenyellow;
+    width: 120px;
+    bottom: 0;
+    left: 25%;
+}
+
+.good-at p {
+    width:80%;
+    margin: auto;
+}
+
+
+.good-sections{
+    display: flex;
+    width: 60vw;
+    padding: 10px;
+    height: 200px;
+    text-align: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.good-sections > *{
+    padding: 10px;
+    margin: 10px;
+
+}
+.good-sections > * > h4 {
+    color: rgb(255, 255, 255);
+}
+.good-sections > * > p {
+    color:gray;
+    /* width: 100%; */
+    margin-top: 10px;
+}

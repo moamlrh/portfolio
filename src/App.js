@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import "./App.css"
+import LeftSide from './Components/left-side/LeftSide'
+import RightSide from './Components/right-side/RightSide'
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    const left = document.querySelector('.left-side-app')
+    const right = document.querySelector('.right-side-app')
+    window.addEventListener('load', e => {
+      left.style.left = '0'
+      left.style.position = 'relative'
+
+      right.style.right = '0';
+      right.style.position = 'relative'
+    })
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="left-side-app">
+        <LeftSide />
+      </div>
+      <div className="right-side-app">
+        <RightSide />
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;

@@ -1,0 +1,12 @@
+.right-side {
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url("./page-bg.jpg");
+    background-attachment: fixed;
+    background-color: grey;
+}
