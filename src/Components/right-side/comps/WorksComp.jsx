@@ -2,7 +2,20 @@ import React, { useEffect } from "react";
 import './WorksComp.css'
 
 function WorksComp() {
-  
+  useEffect(() => {
+    const images = document.querySelectorAll('.works-img');
+
+    images.forEach((img) => {
+      img.addEventListener('mousemove' , e => {
+        img.style.transition = 'all 1s'
+        img.style.transform = 'scale(2)'
+      })
+      img.addEventListener('mouseleave' , e => {
+        img.style.transition = 'all .6s'
+        img.style.transform = 'scale(1)'
+      })
+    })
+  },[])
   return (
     <div className="works" id="works">
       <h2>My Work</h2>
@@ -20,22 +33,22 @@ function WorksComp() {
         </div>
         <div className="projects">
           <div className="first-project col-1">
-            <img src="/images/portfolio-04.jpg" alt="portfolio-04" />
+            <img className="works-img" src="/images/portfolio-04.jpg" alt="portfolio-04" />
           </div>
           <div className="first-project col-1">
-            <img src="/images/portfolio-04.jpg" alt="portfolio-04" />
+            <img className="works-img"src="/images/portfolio-04.jpg" alt="portfolio-04" />
           </div>
           <div className="first-project col-1">
-            <img src="/images/portfolio-04.jpg" alt="portfolio-04" />
+            <img className="works-img"src="/images/portfolio-04.jpg" alt="portfolio-04" />
           </div>
           <div className="first-project col-2">
-            <img src="/images/portfolio-04.jpg" alt="portfolio-04" />
+            <img className="works-img"src="/images/portfolio-04.jpg" alt="portfolio-04" />
           </div>
           <div className="first-project col-2">
-            <img src="/images/portfolio-01.jpg" alt="portfolio-04" />
+            <img className="works-img"src="/images/portfolio-01.jpg" alt="portfolio-04" />
           </div>
           <div className="first-project col-2">
-            <img src="/images/portfolio-02.jpg" alt="portfolio-04" />
+            <img className="works-img"src="/images/portfolio-02.jpg" alt="portfolio-04" />
           </div>
         </div>
       </div>

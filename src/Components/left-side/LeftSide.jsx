@@ -39,7 +39,6 @@ export default function LeftSide() {
           t.style.opacity = "0";
           t.style.transform = "scale(0)";
         });
-
         item.classList.add("active");
         item.style.backgroundColor = " rgba(5, 142, 184, 0.349)";
         icons.forEach((icon) => {
@@ -61,6 +60,16 @@ export default function LeftSide() {
         });
       });
     });
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", (e) => {
+        e.preventDefault();
+        document
+          .getElementById(anchor.getAttribute("href").split("#")[1])
+          .scrollIntoView({
+            behavior: "smooth",
+          });
+      });
+    });
   }, []);
   return (
     <div className="left-side">
@@ -72,22 +81,22 @@ export default function LeftSide() {
         <strong>Web Developer</strong>
       </div>
       <div className="menu">
-        <div className="about-menu">
+        <a href="#about" className="about-menu">
           <Info className="icons" />
           <h4>About Me</h4>
-        </div>
-        <div className="about-menu">
+        </a>
+        <a href="#good" className="about-menu">
           <EmojiEmotions className="icons" />
           <h4>Good at</h4>
-        </div>
-        <div className="about-menu">
+        </a>
+        <a href="#works" className="about-menu">
           <Stars className="icons" />
           <h4>My Work</h4>
-        </div>
-        <div className="about-menu">
+        </a>
+        <a href="#contact" className="about-menu">
           <ContactMail className="icons" />
           <h4>Contact Me</h4>
-        </div>
+        </a>
       </div>
       <div className="social-media-icons">
         <GitHub />
