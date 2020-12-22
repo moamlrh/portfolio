@@ -10,7 +10,6 @@ export default function App() {
     window.addEventListener('load', e => {
       left.style.left = '0'
       left.style.position = 'relative'
-
       right.style.right = '0';
       right.style.position = 'relative'
     })

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import AboutComp from "./comps/AboutComp";
 import ContactComp from "./comps/ContactComp";
 import GoodComp from "./comps/GoodComp";

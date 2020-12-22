@@ -104,7 +104,7 @@ export default function LeftSide() {
         <LinkedIn />
       </div>
       <div className="footer">
-        <span>Copyright 2020 Reflux Design </span>
+        <span>Copyright 2020 For Moaml RH </span>
       </div>
     </div>
   );
