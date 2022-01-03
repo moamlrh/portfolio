@@ -6,6 +6,7 @@
 .pnp.js
 
 # testing
+#git add just for testing purpose
 /coverage
 
 # production
