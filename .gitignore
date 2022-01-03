@@ -10,6 +10,7 @@
 /coverage
 
 # production
+# production - test
 /build
 
 # misc
